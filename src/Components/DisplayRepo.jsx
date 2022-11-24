@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link, Outlet } from "react-router-dom";
+// import { Link, Outlet } from "react-router-dom";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 const DisplayRepo = (data) => {
   const [data2, setdata2] = useState([]);
-  const [star, setStart] = useState(false);
+  // const [star, setStart] = useState(false);
 
   // console.log(star);
 
@@ -23,22 +23,22 @@ const DisplayRepo = (data) => {
 
   let myObj = [];
 
-  const StarRepo = (e) => {
-    e.preventDefault();
-    console.log("Clicked");
-    /*   const handleClick = (e) => {
-      e.preventDefault();
-      console.log('The link was clicked.');
-    } */
-    //console.log("Clicked");
-    /* const [star, setStart] = useState([]);
+  // const StarRepo = (e) => {
+  //   e.preventDefault();
+  //   console.log("Clicked");
+  //   /*   const handleClick = (e) => {
+  //     e.preventDefault();
+  //     console.log('The link was clicked.');
+  //   } */
+  //   //console.log("Clicked");
+  //   /* const [star, setStart] = useState([]);
 
-    const switchState = star ? false : true;
+  //   const switchState = star ? false : true;
 
-    setStart(switchState);
+  //   setStart(switchState);
 
-    console.log(star); */
-  };
+  //   console.log(star); */
+  // };
 
   data2.forEach((item) => {
     let itemObj = {
@@ -71,9 +71,9 @@ const DisplayRepo = (data) => {
       {myObj.map((item, index) => {
         const {
           name,
-          full_name,
+          // full_name,
           language,
-          language_url,
+          // language_url,
           update,
           repoUrl,
           visibility,
